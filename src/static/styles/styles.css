@@ -3,7 +3,7 @@
 }
 
 html {
-	font-family: Arial Black, Arial;
+	font-family: 'Hind', Arial Black, Arial;
 	font-size: 100%;
 }
 
@@ -14,7 +14,7 @@ body {
 
 header {
 	display: flex;
-	background-color: skyblue;
+	background-color: #46B1C9;
 	flex-direction: column;
 	align-items: center;
 	position: sticky;
@@ -53,6 +53,17 @@ main {
 }
 
 button {
+	filter: drop-shadow(2px 4px 6px black);
 	height: 2.5rem;
 	width: 50vw;
 }
+
+#dropdown {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 70vw;
+	height: 1.5rem;
+}
+
