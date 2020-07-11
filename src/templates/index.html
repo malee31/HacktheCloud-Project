@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Button of Happiness</title>
+	 <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}">
     <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
   </head>
@@ -15,9 +16,17 @@
       </nav>
     </header>
     <main id='sadness'>
-      <button onclick="dostuff()">Press Me to Dispense Happiness</button>
-      <br>
-
+		<div id="dropdown">
+			<select onchange="selection(this)">
+				<option>I want relaxing sounds</option>
+				<option>I want motivation</option>
+				<option>I want a video</option>
+			</select>
+			<button onclick="dostuff()">Press Me to Dispense Happiness</button>
+		</div>
+		<div id="result">
+			
+		</div>
     </main>
   </body>
 </html>
