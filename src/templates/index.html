@@ -4,7 +4,6 @@
     <title>Button of Happiness</title>
 	 <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}">
-    <script src="{{url_for('static', filename='js/videos.js')}}"></script>
     <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
   </head>
   <body>
@@ -19,14 +18,14 @@
     <main>
 		<div id="dropdown">
 			<select onchange="selection(this)">
-				<option>I want relaxing sounds</option>
-				<option>I want motivation</option>
-				<option>I want a video</option>
+				<option>I want to be relaxed</option>
+				<option>I want to be motivation</option>
+				<option>I want to be entertained</option>
 			</select>
-			<button onclick="dostuff()">Hey, can I get another one?</button>
+			<button onclick="generateOutput()">Hey, can I get another one?</button>
 		</div>
 		<div id="sadness">
-			
+			<!-- Output goes here -->
 		</div>
     </main>
   </body>
