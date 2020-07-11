@@ -1,0 +1,6 @@
+# Ignore venv
+venv/
+
+# Compiled python files
+*.pyc
+__pycache__/
