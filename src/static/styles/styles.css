@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	animation-duration: 1.5s;
 }
 
 html {
@@ -10,11 +11,14 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+	background: linear-gradient(#1869AD, #46B1C9);
+	background-attachment: fixed;
 }
 
 header {
 	display: flex;
 	background-color: #46B1C9;
+	/*#46B1C9*/
 	flex-direction: column;
 	align-items: center;
 	position: sticky;
@@ -24,6 +28,12 @@ header {
 	padding: 0;
 	width: 100vw;
 	text-align: center;
+}
+
+h1 {
+	color: white;
+	padding: 0;
+	margin: 0;
 }
 
 nav {
@@ -39,6 +49,13 @@ nav {
 nav a {
 	flex-grow: 1;
 	width: 100%;
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	color: #46B1C9;
+	background-color: white;
 }
 
 nav a:nth-child(2) {
@@ -53,9 +70,12 @@ main {
 }
 
 button {
-	filter: drop-shadow(2px 4px 6px black);
+	filter: drop-shadow(2px 2px 2px black);
 	height: 2.5rem;
-	width: 50vw;
+	width: 90%;
+	border-radius: 1.25rem;
+	font-size: 1.2rem;
+	margin: 0.5rem;
 }
 
 #dropdown {
@@ -64,6 +84,15 @@ button {
 	align-items: center;
 	justify-content: center;
 	width: 70vw;
-	height: 1.5rem;
+	height: 4.5rem;
 }
 
+select {
+	width: 100%;
+	text-align-last: center;
+	font-size: 1.5rem;
+	height: 3rem;
+	background-image: url(...);
+	border-radius: 1.5rem;
+	filter: drop-shadow(2px 2px 2px black);
+}
