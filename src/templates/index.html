@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Button of Happiness</title>
-		<link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}">
-	</head>
-	<body>
-		<header>
-			<h1>Button of Happiness</h1>
-			<nav>
-				<a>Home</a>
-				<a>Leave a Message</a>
-				<a>About</a>
-			</nav>
-		</header>
-		<main>
-			<button onclick="dostuff()">Press Me to Dispense Happiness</button>
-		</main>
-		<script src="{{url_for('static', filename='js/scripts.js')}}"></script>
-	</body>
+  <head>
+    <title>Button of Happiness</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}">
+    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Button of Happiness</h1>
+      <nav>
+        <a>Home</a>
+        <a>Leave a Message</a>
+        <a>About</a>
+      </nav>
+    </header>
+    <main id='sadness'>
+      <button onclick="dostuff()">Press Me to Dispense Happiness</button>
+      <br>
+
+    </main>
+  </body>
 </html>
