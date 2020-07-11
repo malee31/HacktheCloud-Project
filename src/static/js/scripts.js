@@ -1,1 +1,5 @@
-console.log("hello word");
+console.log("wow");
+function dostuff()
+{
+	console.log("stuff done");
+}
