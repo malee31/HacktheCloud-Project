@@ -17,8 +17,7 @@ body {
 
 header {
 	display: flex;
-	background-color: #46B1C9;
-	/*#46B1C9*/
+	background-color: #4470AD;
 	flex-direction: column;
 	align-items: center;
 	position: sticky;
@@ -26,23 +25,23 @@ header {
 	left: 0;
 	margin: 0;
 	padding: 0;
-	width: 100vw;
+	width: 100%;
 	text-align: center;
 }
 
 h1 {
-	color: white;
+	color: #CED8F7;
 	padding: 0;
 	margin: 0;
 }
 
 nav {
 	display: flex;
-	border: 1px solid lightblue;
+	border: 1px solid #233C67;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	width: 100vw;
+	width: 100%;
 	height: 2rem;
 }
 
@@ -50,12 +49,12 @@ nav a {
 	flex-grow: 1;
 	width: 100%;
 	text-decoration: none;
-	color: white;
+	color: #CED8F7;
 }
 
 nav a:hover {
-	color: #46B1C9;
-	background-color: white;
+	color: #4470AD;
+	background-color: #CED8F7;
 }
 
 nav a:nth-child(2) {
