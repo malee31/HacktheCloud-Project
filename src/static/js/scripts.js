@@ -38,6 +38,7 @@ function generateAudio(index)
 	source.src = audioTracks[index];
 	source.type = "audio/mp3";
 	audio.setAttribute("autoplay", "");
+	audio.onended = generateOutput;
 	audio.appendChild(source);
 	injectLocation.appendChild(audio);
 }
