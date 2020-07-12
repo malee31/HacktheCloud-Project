@@ -7,5 +7,5 @@ def getMessages():
 		TableName='Messages'
 	)
 
-def postMessage():
-	print("idk");
+def postMessage(message):
+	print(message);

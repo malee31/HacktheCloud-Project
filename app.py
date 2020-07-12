@@ -31,8 +31,8 @@ def getMessages():
 
 @app.route("/dbpost", methods = ["POST"])
 def writeMessage():
-	print(jsonify(request.json))
-	item = aws_controller.postMessage()
+	print(request.json)
+	item = aws_controller.postMessage(message)
 	return Response("{'status':'success'}", status=200, mimetype='application/json')
 
 if __name__ == "__main__":
