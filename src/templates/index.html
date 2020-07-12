@@ -4,8 +4,6 @@
     <title>Button of Happiness</title>
 	 <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}">
-    <script src="{{url_for('static', filename='js/links.js')}}"></script>
-    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
   </head>
   <body>
     <header>
@@ -17,6 +15,9 @@
       </nav>
     </header>
     <main>
+		<div id="sadness">
+			<!-- Output goes here -->
+		</div>
 		<div id="dropdown">
 			<select onchange="selection(this)">
 				<option>I want to be relaxed</option>
@@ -25,9 +26,8 @@
 			</select>
 			<button onclick="generateOutput()">Hey, can I get another one?</button>
 		</div>
-		<div id="sadness">
-			<!-- Output goes here -->
-		</div>
     </main>
+    <script src="{{url_for('static', filename='js/links.js')}}"></script>
+    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
   </body>
 </html>
