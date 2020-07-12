@@ -40,10 +40,11 @@ function startMessages(button)
 function sendMessage(message){
 	let xhr = new XMLHttpRequest();
 	xhr.addEventListener("load", data => {
-		var resJSON = JSON.parse(data.currentTarget.responseText);
+		var resJSON = data.currentTarget.responseText;
+		console.log(resJSON);
 		return resJSON;
 	});
-	xhr.open("GET", window.location.origin + "/dbpost");
+	xhr.open("POST", window.location.origin + "/dbpost");
 	xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 	xhr.send(JSON.stringify({"message": message}));
 }
