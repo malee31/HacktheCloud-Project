@@ -20,8 +20,8 @@ function getMessages(cb)
 function setMessage(elem)
 {
 	getMessages(data => {
-		var message = data["Items"][0];
-		elem.innerText = `${message.Message.S}`;
+		var message = data["Items"][Math.floor(Math.random()*data["Items"].lengthlength)];
+		document.getElementById('info').innerText = message.message.S;
 	});
 }
 
@@ -37,7 +37,7 @@ function startMessages(button)
 
 }
 
-function sendMessage(message, user){
+function sendMessage(message){
 	let xhr = new XMLHttpRequest();
 	xhr.addEventListener("load", data => {
 		var resJSON = JSON.parse(data.currentTarget.responseText);
@@ -45,5 +45,5 @@ function sendMessage(message, user){
 	});
 	xhr.open("GET", window.location.origin + "/dbread");
 	xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-	xhr.send(JSON.stringify({ "email": "hello@user.com", "response": { "name": "Tester" } }));
+	xhr.send(JSON.stringify({"name": message}));
 }
