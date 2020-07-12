@@ -13,7 +13,7 @@ def home_page():
 
 @app.route('/messages')
 def get_items():
-    return jsonify(aws_controller.get_items())
+        return render_template("messages.html")
 
 @app.route("/", methods = ["GET"])
 def home():
