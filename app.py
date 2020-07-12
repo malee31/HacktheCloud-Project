@@ -11,7 +11,7 @@ app.config.update(
 def home_page():
     return 'TODO: Home Page'
 
-@app.route('/get-items')
+@app.route('/messages')
 def get_items():
     return jsonify(aws_controller.get_items())
 
