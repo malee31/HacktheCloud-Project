@@ -20,7 +20,7 @@ function getMessages(cb)
 function setMessage(elem)
 {
 	getMessages(data => {
-		var message = data["Items"][Math.floor(Math.random()*data["Items"].lengthlength)];
+		var message = data["Items"][Math.floor(Math.random()*data["Items"].length)];
 		document.getElementById('info').innerText = message.message.S;
 	});
 }
