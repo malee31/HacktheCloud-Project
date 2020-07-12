@@ -8,8 +8,4 @@ def getMessages():
     )
 
 def postMessage():
-    return dynamo_client.put-item(
-        TableName='Messages',
-        Message="First post in this thread"
-        User="Bob"
-    )
+    console.log("idk");

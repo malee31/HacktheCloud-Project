@@ -5,12 +5,12 @@ function getMessages()
 		var resJSON = JSON.parse(data.currentTarget.responseText);
 		return resJSON;
 	});
-	xhr.open("GET", window.location.origin + "/read");
+	xhr.open("GET", window.location.origin + "/dbread");
 	xhr.send();
 }
 
-function showMessages(id){
-	document.getElementById(id).innerHTML = getMessages();
+function showMessages(){
+	document.getElementById("test").innerHTML = JSON.stringify(getMessages());
 }
 
 function sendMessage(message, user){
@@ -19,7 +19,7 @@ function sendMessage(message, user){
 		var resJSON = JSON.parse(data.currentTarget.responseText);
 		return resJSON;
 	});
-	xhr.open("GET", window.location.origin + "/database");
+	xhr.open("GET", window.location.origin + "/dbread");
 	xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 	xhr.send(JSON.stringify({ "email": "hello@user.com", "response": { "name": "Tester" } }));
 }

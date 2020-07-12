@@ -24,12 +24,12 @@ def home():
 def display():
     return render_template("welcome.html")
 
-@app.route("/read", methods = ["GET"])
+@app.route("/dbread", methods = ["GET"])
 def getMessages():
     item = aws_controller.getMessages()
     return item
 
-@app.route("/post", methods = ["POST"])
+@app.route("/dbpost", methods = ["POST"])
 def writeMessage(message, author):
     item = aws_controller.writeMessage()
 
