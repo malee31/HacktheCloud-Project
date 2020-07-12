@@ -17,11 +17,11 @@ function getMessages(cb)
 	return xhr.send();
 }
 
-function setMessage(id)
+function setMessage(elem)
 {
 	getMessages(data => {
 		var message = data["Items"][0];
-		elem.innerText = `${message.User.S}: ${message.Message.S}`;
+		elem.innerText = `${message.Message.S}`;
 	});
 }
 
