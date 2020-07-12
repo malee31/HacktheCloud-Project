@@ -9,6 +9,8 @@ function getMessages()
 	xhr.open("GET", window.location.origin + "/database");
 	xhr.send();
 }
-function sendMessage(){
-
+function showMessages(id){
+	document.getElementById(id).innerHTML = getMessages();
+}
+function sendMessage(messag, user){
 }
