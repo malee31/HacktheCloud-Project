@@ -17,7 +17,7 @@ function getMessages(cb)
 	return xhr.send();
 }
 
-function setMessage(elem)
+function setMessage(id)
 {
 	getMessages(data => {
 		var message = data["Items"][0];
