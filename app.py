@@ -24,10 +24,14 @@ def home():
 def display():
     return render_template("welcome.html")
 
-@app.route("/database", methods = ["GET"])
-def getStuff():
-    item = aws_controller.getItems()
+@app.route("/dbread", methods = ["GET"])
+def getMessages():
+    item = aws_controller.getMessages()
     return item
+
+@app.route("/dbpost", methods = ["POST"])
+def writeMessage(message, author):
+    item = aws_controller.writeMessage()
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port="80")
