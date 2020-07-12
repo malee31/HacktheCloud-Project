@@ -31,7 +31,7 @@ def getMessages():
 
 @app.route("/dbpost", methods = ["POST"])
 def writeMessage():
-    item = aws_controller.writeMessage()
+    item = aws_controller.postMessage()
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port="80")
