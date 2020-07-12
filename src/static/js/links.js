@@ -21,6 +21,8 @@ const images = [
 "https://i.redd.it/acmif3u7nw751.jpg"
 ];
 
-const audio = [
-
+const audioTracks = [
+	"/static/audio/rainforest_ambience.mp3",
+	"/static/audio/Light_Rain_and_Crickets.mp3",
+	"/static/audio/Beach_Waves.mp3"
 ];
