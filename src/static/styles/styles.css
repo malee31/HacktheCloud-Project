@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	animation-direction: both;
+	animation-fill-mode: both;
 	animation-duration: 1.5s;
 }
 

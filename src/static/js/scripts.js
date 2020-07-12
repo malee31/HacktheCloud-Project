@@ -5,12 +5,13 @@ window.onload = () => {
 	 injectLocation = document.getElementById("sadness");
 };
 
-function generateOutput()
+function generateOutput(button)
 {
 	if(/motivated/.test(currentSelection)) generateImage(clicks % images.length);
 	else if(/entertained/.test(currentSelection)) generateVideo(clicks % videos.length);
 	else if (/relaxed/.test(currentSelection)) generateAudio(clicks % audioTracks.length);
 	else console.log("No match: " + currentSelection);
+	button.innerText = getItem();
 	injectLocation.classList.add("expand");
 	clicks++;
 }
