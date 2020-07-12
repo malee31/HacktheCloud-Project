@@ -30,7 +30,7 @@ def getMessages():
     return item
 
 @app.route("/dbpost", methods = ["POST"])
-def writeMessage(message, author):
+def writeMessage():
     item = aws_controller.writeMessage()
 
 if __name__ == "__main__":

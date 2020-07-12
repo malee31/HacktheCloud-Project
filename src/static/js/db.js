@@ -43,7 +43,7 @@ function sendMessage(message){
 		var resJSON = JSON.parse(data.currentTarget.responseText);
 		return resJSON;
 	});
-	xhr.open("GET", window.location.origin + "/dbread");
+	xhr.open("GET", window.location.origin + "/dbpost");
 	xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-	xhr.send(JSON.stringify({"name": message}));
+	xhr.send(JSON.stringify({"message": message}));
 }
