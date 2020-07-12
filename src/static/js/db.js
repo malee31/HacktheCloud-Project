@@ -8,14 +8,14 @@ function getMessages(cb)
 		var resJSON = JSON.parse(data.currentTarget.responseText);
 		return cb(resJSON);
 	});
-	xhr.open("GET", window.location.origin + "/database");
+	xhr.open("GET", window.location.origin + "/dbread");
 	return xhr.send();
 }
 
-function setMessage(elem)
+function setMessage(id)
 {
 	getMessages(data => {
-		elem.innerText = data;
+		document.getElementById(id).innerText = JSON.stringify(data);
 	});
 }
 
