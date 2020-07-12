@@ -1,6 +1,5 @@
 import os, aws_controller
-from flask import Flask, render_template, url_for, redirect, jsonify, request, Response
-import aws_controller
+from flask import Flask, render_template, url_for, redirect, request, Response
 app = Flask(__name__, template_folder = "./src/templates", static_folder = "./src/static")
 
 app.config.update(
