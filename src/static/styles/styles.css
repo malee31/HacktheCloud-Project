@@ -12,13 +12,13 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(#1869AD, #46B1C9);
+	background: linear-gradient(#282051, #573ea1, #9b58b6, #bf5bb9, #e47ca7);
 	background-attachment: fixed;
 }
 
 header {
 	display: flex;
-	background-color: #4470AD;
+	background-color: #502D71;
 	flex-direction: column;
 	align-items: center;
 	position: sticky;
@@ -31,7 +31,7 @@ header {
 }
 
 h1 {
-	color: #CED8F7;
+	color: #FFF6EC;
 	padding: 0;
 	margin: 0;
 }
