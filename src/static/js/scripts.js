@@ -17,17 +17,27 @@ function generateOutput(button)
 
 function generateVideo(index)
 {
-	injectLocation.innerHTML = '';
-	let vid = document.createElement('video'); 
-	let source = document.createElement('source');
-	//vid.setAttribute("width", 666);
-	//vid.setAttribute("height", 420);
-	vid.setAttribute("controls", "");
-	vid.setAttribute("autoplay", "");
-	source.setAttribute("src", videos[index]);
-	source.setAttribute("type", "video/mp4");
-	vid.appendChild(source);
-	injectLocation.appendChild(vid);
+	if(/youtube/.test(videos[index])){
+		injectLocation.innerHTML = '';
+		let vid = document.createElement('iframe');
+		vid.setAttribute('width', 560);
+		vid.setAttribute('height', 315);
+		vid.setAttribute('src', videos[index]+'?autoplay=1');
+		vid.setAttribute('allow', "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+		vid.setAttribute('frameborder', "0");
+		vid.setAttribute('allowfullscreen', "");
+		injectLocation.appendChild(vid);
+	} else {
+		injectLocation.innerHTML = '';
+		let vid = document.createElement('video'); 
+		let source = document.createElement('source');
+		vid.setAttribute("controls", "");
+		vid.setAttribute("autoplay", "");
+		source.setAttribute("src", videos[index]);
+		source.setAttribute("type", "video/mp4");
+		vid.appendChild(source);
+		injectLocation.appendChild(vid);
+	}
 }
 
 function generateAudio(index)
