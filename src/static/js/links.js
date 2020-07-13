@@ -2,6 +2,7 @@ const videos = [
 'https://www.youtube.com/embed/NBFuzr_GnqQ',
 'https://www.youtube.com/embed/Cr02_6XekIM', 
 'https://www.youtube.com/embed/1fpa4sgRUFc'
+'https://www.youtube.com/embed/huleU3JNHdA'
 ];
 
 const images = [
