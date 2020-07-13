@@ -1,4 +1,3 @@
-var clicks = 0;
 var currentSelection = "relaxed";
 var injectLocation;
 window.onload = () => {
@@ -7,9 +6,9 @@ window.onload = () => {
 
 function generateOutput(button)
 {
-	if(/motivated/.test(currentSelection)) generateImage(clicks % images.length);
-	else if(/entertained/.test(currentSelection)) generateVideo(clicks % videos.length);
-	else if (/relaxed/.test(currentSelection)) generateAudio(clicks % audioTracks.length);
+	if(/motivated/.test(currentSelection)) generateImage(Math.floor(Math.Random()*images.length));
+	else if(/entertained/.test(currentSelection)) generateVideo(Math.floor(Math.Random()*videos.length));
+	else if (/relaxed/.test(currentSelection)) generateAudio(Math.floor(Math.Random()*audioTracks.length));
 	else console.log("No match: " + currentSelection);
 	injectLocation.classList.add("expand");
 	clicks++;
