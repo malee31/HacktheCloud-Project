@@ -38,13 +38,16 @@ function startMessages(button)
 }
 
 function sendMessage(message){
-	let xhr = new XMLHttpRequest();
-	xhr.addEventListener("load", data => {
-		var resJSON = data.currentTarget.responseText;
-		console.log(resJSON);
-		return resJSON;
-	});
-	xhr.open("POST", window.location.origin + "/dbpost");
-	xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-	xhr.send(JSON.stringify({"message": message}));
+	if(message != '' && message != null){
+		let xhr = new XMLHttpRequest();
+		xhr.addEventListener("load", data => {
+			var resJSON = data.currentTarget.responseText;
+			console.log(resJSON);
+			return resJSON;
+		});
+		xhr.open("POST", window.location.origin + "/dbpost");
+		xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+		xhr.send(JSON.stringify({"message": message}));
+		document.getElementById('myText').value = '';
+	}
 }
