@@ -18,7 +18,10 @@ const images = [
 "https://i.redd.it/wnqh0lc9rl851.jpg",
 "https://preview.redd.it/m2phxlygva851.jpg?width=640&crop=smart&auto=webp&s=eb2c561fd78bc118c182adac2da2790182be6685",
 "https://preview.redd.it/v2lya74wvy751.jpg?width=640&crop=smart&auto=webp&s=423ad9ea4196ba3f1a8dbad6aa8cc3f9afefd40f",
-"https://i.redd.it/acmif3u7nw751.jpg"
+"https://i.redd.it/acmif3u7nw751.jpg",
+"https://wp-en.oberlo.com/wp-content/uploads/2019/11/motivational-quotes-of-the-day.jpg",
+"https://us.123rf.com/450wm/santykamal/santykamal1906/santykamal190600016/125304657-work-hard-dream-big-hand-lettering-motivational-quotes.jpg?ver=6",
+"https://s3.amazonaws.com/media.briantracy.com/blog/wp-content/uploads/2015/12/04093022/make-your-life-a-masterpiece-brian-tracy-motivational-quotes.png"
 ];
 
 const audioTracks = [
