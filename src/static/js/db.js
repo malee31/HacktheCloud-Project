@@ -39,6 +39,7 @@ function startMessages(button)
 
 function sendMessage(message){
 	if(message != '' && message != null){
+		alert("Thanks for making someone's day a bit better :)");
 		let xhr = new XMLHttpRequest();
 		xhr.addEventListener("load", data => {
 			var resJSON = data.currentTarget.responseText;
