@@ -24,7 +24,8 @@ const images = [
 "https://i.redd.it/acmif3u7nw751.jpg",
 "https://wp-en.oberlo.com/wp-content/uploads/2019/11/motivational-quotes-of-the-day.jpg",
 "https://us.123rf.com/450wm/santykamal/santykamal1906/santykamal190600016/125304657-work-hard-dream-big-hand-lettering-motivational-quotes.jpg?ver=6",
-"https://s3.amazonaws.com/media.briantracy.com/blog/wp-content/uploads/2015/12/04093022/make-your-life-a-masterpiece-brian-tracy-motivational-quotes.png"
+"https://s3.amazonaws.com/media.briantracy.com/blog/wp-content/uploads/2015/12/04093022/make-your-life-a-masterpiece-brian-tracy-motivational-quotes.png",
+"https://i.redd.it/jrfvl10757w21.jpg"
 ];
 
 const audioTracks = [
