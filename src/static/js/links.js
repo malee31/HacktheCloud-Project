@@ -4,7 +4,9 @@ const videos = [
 'https://www.youtube.com/embed/1fpa4sgRUFc',
 'https://www.youtube.com/embed/huleU3JNHdA',
 'https://www.youtube.com/embed/V-_O7nl0Ii0',
-'https://www.youtube.com/embed/Edx9D2yaOGs'
+'https://www.youtube.com/embed/Edx9D2yaOGs',
+'https://www.youtube.com/embed/YEVEsn7rgyU',
+'https://www.youtube.com/embed/CLMzrIlUf_c'
 ];
 
 const images = [
