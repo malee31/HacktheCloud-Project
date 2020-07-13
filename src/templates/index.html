@@ -9,9 +9,6 @@
 	<body>
 		<header>
 			<h1>Button of Happiness</h1>
-			<nav>
-				<a href='/messages'>Leave a Message</a>
-			</nav>
 		</header>
 		<a href="/home" id="home">
 			<img src="{{url_for('static', filename='homeIcon.png')}}" alt="Home">
@@ -28,6 +25,10 @@
 			</select>
 			<button onclick="generateOutput(this)">Hey, can I get another one?</button>
 		</div>
+		<a href='/messages' id="notification">
+			<img src="{{url_for('static', filename='mailIcon.png')}}" alt="Messages">
+			<p>Leave a Message</p>
+		</a>
 		</main>
 		<script src="{{url_for('static', filename='js/links.js')}}"></script>
 		<script src="{{url_for('static', filename='js/db.js')}}"></script>

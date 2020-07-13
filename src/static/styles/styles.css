@@ -178,3 +178,30 @@ video {
   -webkit-transform: translateX(-3px);
   transform: translateX(-3px);
 }
+
+#notification {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #9857B5;
+	width: 10rem;
+	height: 5rem;
+	border-radius: 1rem;
+	top: calc(100vh - 6.5rem);
+	left: calc(100vw - 11.5rem);
+	text-decoration: none;
+	padding: .5rem;
+	color: #CED8F7;
+	background-image: url("/static/mailIcon.png");
+}
+
+#notification p {
+	margin: 0;
+}
+
+#notification img {
+	max-height: 3rem;
+	max-width: 8rem;
+}
