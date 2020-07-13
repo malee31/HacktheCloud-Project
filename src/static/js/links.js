@@ -6,7 +6,6 @@ const videos = [
 ];
 
 const images = [
-"https://preview.redd.it/a4ldmpqzkv841.jpg?width=640&crop=smart&auto=webp&s=b33129869320677ae1693b9b6d449a66154b7294",
 "https://i.imgur.com/45hPCJnr.jpg",
 "https://i.redd.it/q4cgd2me61a51.jpg",
 "https://preview.redd.it/hcnnvs4zsv951.png?width=640&crop=smart&auto=webp&s=c29bbfdf6c8341840e5744bc7452cc117d7533c6",
