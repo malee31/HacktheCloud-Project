@@ -7,5 +7,5 @@ def getMessages():
         TableName='Messages'
     )
 
-def postMessage():
-    console.log("idk");
+def postMessage(message):
+    dynamo_client.put_item(TableName='Messages', Item={'message':{'S':message}})

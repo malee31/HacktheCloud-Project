@@ -2,18 +2,53 @@ body {
 	width: 100%;
 	height: 100vh;
 	margin: 0;
-	padding: 0;
+	padding: 2.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
+#info {
+	animation-name: colorCalm;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	text-shadow: 1px 1px #0F0F0F;
+	opacity: 0;
+	font-size: 3rem;
+}
+
 button {
 	animation-duration: 1.5s;
+	font-size: 1rem;
 	height: 3rem;
 	padding: 0.8rem;
-	margin: 1rem;
+	margin: 1.5rem 1rem;
+}
+
+input {
+	border-radius: 1rem;
+	height: 2.5rem;
+	margin: 0 5px;
+	width: 3.5rem;
+	font-size: 1rem;
+	border-radius: .1rem .5rem .5rem .1rem;
+}
+
+#myText {
+	width: 100%;
+	border-radius: .5rem .1rem .1rem .5rem;
+}
+
+#userInput {
+	width: 90%;
+	height: 2.5rem;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
 }
 
 @keyframes fadeOut {
@@ -28,5 +63,14 @@ button {
 		height: 0;
 		padding: 0;
 		margin: 0;
+	}
+}
+
+@keyframes colorCalm {
+	from {
+		color: #B922FF;
+	}
+	to {
+		color: #354DFF;
 	}
 }
