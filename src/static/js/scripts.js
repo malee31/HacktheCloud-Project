@@ -11,7 +11,6 @@ function generateOutput(button)
 	else if(/entertained/.test(currentSelection)) generateVideo(clicks % videos.length);
 	else if (/relaxed/.test(currentSelection)) generateAudio(clicks % audioTracks.length);
 	else console.log("No match: " + currentSelection);
-	button.innerText = getItem();
 	injectLocation.classList.add("expand");
 	clicks++;
 }

@@ -9,7 +9,7 @@ app.config.update(
 
 @app.route("/home", methods = ["GET"])
 def home_page():
-	return 'TODO: Home Page'
+	return render_template("welcome.html")
 
 @app.route('/messages')
 def get_items():
@@ -19,9 +19,6 @@ def get_items():
 def home():
 	return render_template("index.html")
 
-@app.route("/welcome", methods = ["GET"])
-def display():
-	return render_template("welcome.html")
 
 @app.route("/dbread", methods = ["GET"])
 def getMessages():

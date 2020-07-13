@@ -18,7 +18,7 @@ body {
 
 header {
 	display: flex;
-	background-color: #502D71;
+	background-color: #5E3386;
 	flex-direction: column;
 	align-items: center;
 	position: sticky;
@@ -38,7 +38,6 @@ h1 {
 
 nav {
 	display: flex;
-	border: 1px solid #233C67;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
@@ -54,12 +53,24 @@ nav a {
 }
 
 nav a:hover {
-	color: #4470AD;
-	background-color: #CED8F7;
+	background-color: #63388C;
 }
 
 nav a:nth-child(2) {
 	flex-grow: 2;
+}
+
+#home {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 2rem;
+	height: 2rem;
+	filter: invert(1);
+}
+
+#home:hover {
+	filter: invert(0.8);
 }
 
 main {
